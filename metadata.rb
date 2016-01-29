@@ -6,4 +6,4 @@ description      "Installs/Configures forum.typo3.org"
 version          "0.0.2"
 
 depends          "database", "= 1.3.12"
-
+depends          "ssl_certificates"

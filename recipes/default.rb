@@ -1,3 +1,6 @@
+include_recipe "ssl_certificates"
+ssl_certificate "wildcard.typo3.org"
+
 cron "forum.typo3.org-sitemap" do
   minute "5"
   hour "*"
