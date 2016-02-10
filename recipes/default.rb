@@ -1,3 +1,5 @@
+include_recipe "t3-base"
+
 include_recipe "ssl_certificates"
 ssl_certificate "wildcard.typo3.org"
 

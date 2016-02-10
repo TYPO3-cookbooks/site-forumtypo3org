@@ -5,5 +5,7 @@ license          "Apache 2.0"
 description      "Installs/Configures forum.typo3.org"
 version          "0.0.3"
 
+
+depends          "t3-base",  "~> 0.2.0"
 depends          "database", "= 1.3.12"
 depends          "ssl_certificates"
