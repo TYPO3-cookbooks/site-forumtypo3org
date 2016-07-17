@@ -4,7 +4,9 @@ include_recipe "t3-mysql::server"
 include_recipe "t3-mysql::backup"
 
 include_recipe "ssl_certificates"
-ssl_certificate "wildcard.typo3.org"
+ssl_certificate node['site-forumtypo3org']['ssl_certificate']
+
+user "forumtypo3org"
 
 cron "forum.typo3.org-sitemap" do
   minute "5"
